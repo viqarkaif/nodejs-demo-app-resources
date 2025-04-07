@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Game</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title rainbow-text">🎯 Typing Speed Challenge 🎯</h1>
+    <p class="instructions">Type the sentence below as fast and accurately as you can!</p>
+    <div class="sentence-box">
+      <p id="sentence">Loading...</p>
+    </div>
+    <textarea id="input" placeholder="Start typing here..." autofocus></textarea>
+    <div class="stats">
+      <p>⏱ Time Left: <span id="timer">30</span>s</p>
+      <p>⌨️ WPM: <span id="wpm">0</span></p>
+      <p>🎯 Accuracy: <span id="accuracy">100%</span></p>
+    </div>
+    <button onclick="restartGame()">🔄 Restart</button>
+  </div>
+  <audio id="keySound" src="/type-sound.mp3" preload="auto"></audio>
+  <script src="/script.js"></script>
+</body>
+</html>
